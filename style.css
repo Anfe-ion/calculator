@@ -1,0 +1,73 @@
+*{
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    max-height: 100vh;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    padding: 2em;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen{
+    border: 1px solid rgba(0, 0, 0, 0.562);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    width: 30vw;
+}
+
+#actual-operation{
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    color: rgba(0, 0, 0, 0.432);
+}
+
+#actual-number{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.keyboard{
+    width: 30vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    border-radius: 8px;
+    
+}
+
+.keyboard button{
+    background-color: rgba(66, 114, 247, 0.877);
+    border: rgb(100, 4, 255) 1px solid;
+    border-radius: 5px;
+    padding: 0.5em;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    font-size: 1.5em;
+}
+
+button:active{
+    transform: scale(0.8);
+}
+
+.keyboard .operation{
+    background-color: rgba(255, 209, 57, 0.863);
+    border: 1px solid rgb(248, 216, 72);
+    color: black;
+}
+
+
